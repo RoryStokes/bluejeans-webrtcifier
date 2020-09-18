@@ -9,4 +9,4 @@
 // @match        https://bluejeans.com/*
 // @grant        none
 // ==/UserScript==
-window.location.href.match(RegExp("^https://bluejeans.com/(([0-9]+)|(u/[0-9a-zA-Z]+))/?$")) ? window.location.replace(`${window.location.href}/webrtc`) : null;
+window.location.href.match(RegExp("^https://bluejeans.com/(([0-9]+))/?$")) ? window.location.replace(`${window.location.href}/webrtc`) : null;
